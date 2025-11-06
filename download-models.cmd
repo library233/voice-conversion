@@ -11,15 +11,15 @@ powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/mai
 powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/rmvpe.onnx -outf rmvpe/rmvpe.onnx
 
 md uvr5_weights
-powershell -c iwr  -outf https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/HP2_all_vocals.pth -outf uvr5_weights/HP2_all_vocals.pth
-powershell -c iwr  -outf https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/HP3_all_vocals.pth -outf uvr5_weights/HP3_all_vocals.pth
-powershell -c iwr  -outf https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/HP5_only_main_vocal.pth -outf uvr5_weights/HP5_only_main_vocal.pth
-powershell -c iwr  -outf https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/VR-DeEchoAggressive.pth -outf uvr5_weights/VR-DeEchoAggressive.pth
-powershell -c iwr  -outf https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/VR-DeEchoDeReverb.pth -outf uvr5_weights/VR-DeEchoDeReverb.pth
-powershell -c iwr  -outf https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/VR-DeEchoNormal.pth -outf uvr5_weights/VR-DeEchoNormal.pth
+powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/HP2_all_vocals.pth -outf uvr5_weights/HP2_all_vocals.pth
+powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/HP3_all_vocals.pth -outf uvr5_weights/HP3_all_vocals.pth
+powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/HP5_only_main_vocal.pth -outf uvr5_weights/HP5_only_main_vocal.pth
+powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/VR-DeEchoAggressive.pth -outf uvr5_weights/VR-DeEchoAggressive.pth
+powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/VR-DeEchoDeReverb.pth -outf uvr5_weights/VR-DeEchoDeReverb.pth
+powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/VR-DeEchoNormal.pth -outf uvr5_weights/VR-DeEchoNormal.pth
 
 md uvr5_weights\onnx_dereverb_By_FoxJoy
-powershell -c iwr  -outf https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/onnx_dereverb_By_FoxJoy/vocals.onnx -outf uvr5_weights/onnx_dereverb_By_FoxJoy/vocals.onnx
+powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/onnx_dereverb_By_FoxJoy/vocals.onnx -outf uvr5_weights/onnx_dereverb_By_FoxJoy/vocals.onnx
 
 md pretrained
 powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/pretrained/D32k.pth -outf pretrained/D32k.pth
