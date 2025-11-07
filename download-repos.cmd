@@ -25,6 +25,7 @@ cd /d "%~dp0"
 git clone https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI.git repos/rvc
 rmdir /s /q repos\rvc\runtime 2>NUL
 move runtime repos\rvc\
+md runtime.moved
 
 md utils\rvc
 copy /y libs\ffmpeg.exe utils\rvc\
