@@ -26,6 +26,7 @@ git clone https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI.
 rmdir /s /q repos\rvc\runtime 2>NUL
 move runtime repos\rvc\
 
+md utils\rvc
 copy libs\ffmpeg.exe utils\rvc
 copy libs\ffprobe.exe utils\rvc
 

@@ -27,7 +27,9 @@ call conda create -y -n audio-slicer python=3.11
 call conda install -y -n audio-slicer pip
 call conda activate audio-slicer
 pip install librosa soundfile
-pip install -r requirements.txt
+echo numpy==1.25.2>requirements_2.txt
+type requirements.txt | findstr /v numpy== >>requirements_2.txt
+pip install -r requirements_2.txt
 call conda deactivate
 
 pause
