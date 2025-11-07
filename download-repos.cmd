@@ -27,7 +27,7 @@ rmdir /s /q repos\rvc\runtime 2>NUL
 move runtime repos\rvc\
 
 md utils\rvc
-copy libs\ffmpeg.exe utils\rvc
-copy libs\ffprobe.exe utils\rvc
+copy /y libs\ffmpeg.exe utils\rvc\
+copy /y libs\ffprobe.exe utils\rvc\
 
 pause
