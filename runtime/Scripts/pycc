@@ -1,3 +1,0 @@
-#!E:\codes\py39\py39pt_gpu\runtime\python.exe
-from numba.pycc import main
-main()

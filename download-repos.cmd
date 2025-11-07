@@ -22,13 +22,12 @@ pip install so-vits-svc-fork
 call conda deactivate
 
 cd /d "%~dp0"
-git clone https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI.git repos/rvc
-rmdir /s /q repos\rvc\runtime 2>NUL
-move runtime repos\rvc\
-md runtime.moved
-
-md utils\rvc
-copy /y libs\ffmpeg.exe utils\rvc\
-copy /y libs\ffprobe.exe utils\rvc\
+md repos
+cd repos
+powershell -c iwr https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/RVC1006AMD_Intel.7z -outf rvc.7z
+rmdir rvc
+..\libs\7za.exe x rvc.7z
+move RVC1006AMD_Intel1 rvc
+del /q rvc.7z
 
 pause
