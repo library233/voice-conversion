@@ -32,4 +32,13 @@ type requirements.txt | findstr /v numpy== >>requirements_2.txt
 pip install -r requirements_2.txt
 call conda deactivate
 
+cd /d "%~dp0"
+git clone https://github.com/exirmee/pitchdetector.git utils/pitchdetector
+cd utils\pitchdetector
+call conda create -y -n pitchdetector python=3.11
+call conda install -y -n pitchdetector pip
+call conda activate pitchdetector
+pip install -r requirements.txt
+call conda deactivate
+
 pause
