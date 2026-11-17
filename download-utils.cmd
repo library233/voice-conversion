@@ -8,7 +8,17 @@ pip install spleeter
 call conda deactivate
 
 git clone https://github.com/Anjok07/ultimatevocalremovergui.git utils/uvr
+copy libs\avcodec-61.dll utils\uvr
+copy libs\avdevice-61.dll utils\uvr
+copy libs\avfilter-10.dll utils\uvr
+copy libs\avformat-61.dll utils\uvr
+copy libs\avutil-59.dll utils\uvr
 copy libs\ffmpeg.exe utils\uvr
+copy libs\ffplay.exe utils\uvr
+copy libs\ffprobe.exe utils\uvr
+copy libs\postproc-58.dll utils\uvr
+copy libs\swresample-5.dll utils\uvr
+copy libs\swscale-8.dll utils\uvr
 copy libs\rubberband.exe utils\uvr
 copy libs\sndfile.dll utils\uvr
 cd utils\uvr
